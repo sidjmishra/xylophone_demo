@@ -1,6 +1,9 @@
 # xylophonedemo
+## Notes - 3
 
 A new Flutter application.
+Flutter - Xylophone using audioplayer.
+A demo application for the understanding of students. 
 
 ## Getting Started
 
