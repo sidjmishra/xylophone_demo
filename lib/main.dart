@@ -13,9 +13,11 @@ class MyApp extends StatelessWidget {
 
    Expanded buildKey({Color color, int soundNumber}) {
      return Expanded(
-       child: FlatButton(
+       child: TextButton(
          child: Text(''),
-         color: color,
+         style: ButtonStyle(
+           backgroundColor: MaterialStateProperty.all(Colors.green),
+         ),
          onPressed: () {
            playSound(soundNumber);
          },
@@ -31,7 +33,7 @@ class MyApp extends StatelessWidget {
          body: SafeArea(
            child: Column(
                crossAxisAlignment: CrossAxisAlignment.stretch,
-               children: <Widget>[
+               children: [
                  buildKey(color: Colors.red, soundNumber: 1),
                  buildKey(color: Colors.orange, soundNumber: 2),
                  buildKey(color: Colors.yellow, soundNumber: 3),
